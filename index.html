@@ -41,28 +41,20 @@
       100% { transform: translateY(-115vh) rotate(35deg) scale(1.25); opacity: 0; }
     }
     .wrap { width: min(1080px, 92%); margin: 0 auto; }
-    nav {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 20px 0; gap: 12px;
-    }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; gap: 12px; }
     .brand { font-weight: 900; letter-spacing: .4px; color: var(--hot-pink); }
     .nav-pill {
       border: 1px solid #ffc1d5; color: var(--deep); background: rgba(255,255,255,.7);
       border-radius: 999px; padding: 9px 14px; font-size: .86rem;
     }
-    .hero {
-      min-height: 77vh; display: grid; place-items: center; text-align: center;
-      padding: 38px 0 68px; position: relative;
-    }
+    .hero { min-height: 77vh; display: grid; place-items: center; text-align: center; padding: 38px 0 68px; position: relative; }
     .hero-card {
       width: min(760px, 100%); padding: clamp(26px, 6vw, 58px);
       border: 1px solid rgba(255, 177, 203, .75); border-radius: 34px;
       background: rgba(255,255,255,.72); box-shadow: var(--shadow);
       backdrop-filter: blur(10px); position: relative; overflow: hidden;
     }
-    .hero-card::before, .hero-card::after {
-      content: "♡"; position: absolute; color: #ffd1e0; font-size: 5rem; opacity: .75;
-    }
+    .hero-card::before, .hero-card::after { content: "♡"; position: absolute; color: #ffd1e0; font-size: 5rem; opacity: .75; }
     .hero-card::before { left: 16px; top: 10px; transform: rotate(-20deg); }
     .hero-card::after { right: 18px; bottom: 2px; transform: rotate(18deg); }
     .eyebrow {
@@ -72,17 +64,13 @@
     }
     h1 {
       font-family: Georgia, "Times New Roman", serif; color: var(--deep);
-      font-size: clamp(2.5rem, 8vw, 5.3rem); line-height: 1.02;
-      margin: 22px 0 16px; font-weight: 700;
+      font-size: clamp(2.5rem, 8vw, 5.3rem); line-height: 1.02; margin: 22px 0 16px; font-weight: 700;
     }
     h1 span { color: var(--hot-pink); font-style: italic; }
     .hero p { max-width: 570px; margin: 0 auto; line-height: 1.8; font-size: clamp(1rem, 2.7vw, 1.12rem); }
     .date-line { margin-top: 22px !important; font-weight: 800; color: #c64c7a; }
     .button-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 28px; position: relative; z-index: 1; }
-    .btn {
-      border: 0; border-radius: 999px; padding: 14px 21px; font-weight: 800;
-      transition: transform .2s, box-shadow .2s;
-    }
+    .btn { border: 0; border-radius: 999px; padding: 14px 21px; font-weight: 800; transition: transform .2s, box-shadow .2s; }
     .btn:hover { transform: translateY(-2px); }
     .btn-primary { color: white; background: linear-gradient(135deg, #ff78a6, #ed4b86); box-shadow: 0 9px 22px rgba(237,75,134,.25); }
     .btn-secondary { color: #b63d6e; background: #fff; border: 1px solid #ffc1d5; }
@@ -92,10 +80,7 @@
     h2 { font: 700 clamp(2rem, 5vw, 3rem)/1.1 Georgia, serif; color: var(--deep); margin: 10px 0; }
     .section-head p { max-width: 580px; margin: 0 auto; line-height: 1.7; }
     .story-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .story-card {
-      padding: 24px 20px; background: rgba(255,255,255,.8); border: 1px solid #ffe0eb;
-      border-radius: 24px; box-shadow: 0 10px 30px rgba(199,72,120,.08);
-    }
+    .story-card { padding: 24px 20px; background: rgba(255,255,255,.8); border: 1px solid #ffe0eb; border-radius: 24px; box-shadow: 0 10px 30px rgba(199,72,120,.08); }
     .story-icon { font-size: 2rem; }
     .story-card h3 { color: #a83665; margin: 12px 0 8px; }
     .story-card p { margin: 0; line-height: 1.7; font-size: .96rem; }
@@ -116,7 +101,14 @@
     .photo-placeholder small { display: block; margin-top: 8px; line-height: 1.5; }
     .photo-placeholder img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
     .photo-caption { text-align: center; font-family: Georgia, serif; font-size: 1.04rem; font-weight: 700; padding-top: 13px; }
-    .upload-note { text-align: center; font-size: .9rem; line-height: 1.7; margin: 20px auto 0; max-width: 640px; }
+    .photo-actions { display: flex; gap: 8px; justify-content: center; margin-top: 10px; }
+    .btn-small {
+      border: 1px solid #ffc1d5; background: #fff; color: #b63d6e; border-radius: 999px;
+      padding: 7px 13px; font-size: .82rem; font-weight: 700; cursor: pointer;
+    }
+    .btn-small:hover { background: #ffeef4; }
+    .edit-bar { text-align: center; margin-top: 22px; }
+    .edit-bar p { font-size: .88rem; line-height: 1.7; margin: 10px auto 0; max-width: 620px; }
     .letter-area { display: grid; place-items: center; }
     .letter {
       width: min(720px, 100%); background: rgba(255,255,255,.88); border: 1px solid #ffcddd;
@@ -126,10 +118,7 @@
     .letter-content { text-align: left; line-height: 1.95; white-space: pre-line; margin-top: 20px; }
     .letter-content[hidden] { display: none; }
     .signature { font-family: Georgia, serif; font-style: italic; color: #d6477e; font-size: 1.25rem; margin-top: 18px; }
-    .promise-box {
-      text-align: center; padding: 36px 24px; border-radius: 28px;
-      background: linear-gradient(135deg, #ffdfeb, #fff6fa); border: 1px solid #ffc6d9;
-    }
+    .promise-box { text-align: center; padding: 36px 24px; border-radius: 28px; background: linear-gradient(135deg, #ffdfeb, #fff6fa); border: 1px solid #ffc6d9; }
     .promise-box p { max-width: 650px; margin: 12px auto 0; line-height: 1.85; }
     footer { text-align: center; padding: 36px 0 45px; color: #a44b70; font-size: .9rem; }
     .tiny-heart { color: #ef4d88; animation: pulse 1.2s infinite; display: inline-block; }
@@ -203,25 +192,47 @@
       <div class="section-head">
         <div class="mini">Little moments, big love</div>
         <h2>Galeri kenangan kita 📸</h2>
-        <p>Tempat untuk menyimpan momen favorit kalian. Ganti kotak-kotak di bawah dengan foto asli agar website ini terasa makin personal.</p>
+        <p>Momen-momen favorit kita, disimpan di sini. 💗</p>
       </div>
       <div class="gallery">
         <div class="photo-card">
-          <label class="photo-placeholder" for="photo1" id="preview1" style="display:grid;cursor:pointer">
-          </label>
-          <img scr ="assets/kkk.png" alt="photo1"  width="300" height="200">
+          <div class="photo-placeholder" id="preview1">
+            <div class="ph"><span class="big">📷</span><small>Foto 1</small></div>
+          </div>
           <div class="photo-caption">Awal cerita kita</div>
+          <div class="photo-actions edit-only">
+            <label class="btn-small" for="photo1">📤 Pilih foto</label>
+            <input type="file" id="photo1" accept="image/*" hidden>
+            <button class="btn-small" type="button" data-remove="1">🗑️ Hapus</button>
+          </div>
         </div>
         <div class="photo-card">
-          <label class="photo-placeholder" for="photo2" id="preview2" style="display:grid;cursor:pointer">
-          </label>
+          <div class="photo-placeholder" id="preview2">
+            <div class="ph"><span class="big">📷</span><small>Foto 2</small></div>
+          </div>
           <div class="photo-caption">Momen yang bikin senyum</div>
+          <div class="photo-actions edit-only">
+            <label class="btn-small" for="photo2">📤 Pilih foto</label>
+            <input type="file" id="photo2" accept="image/*" hidden>
+            <button class="btn-small" type="button" data-remove="2">🗑️ Hapus</button>
+          </div>
         </div>
         <div class="photo-card">
-          <label class="photo-placeholder" for="photo3" id="preview3" style="display:grid;cursor:pointer">
-          </label>
+          <div class="photo-placeholder" id="preview3">
+            <div class="ph"><span class="big">📷</span><small>Foto 3</small></div>
+          </div>
           <div class="photo-caption">Kita, hari ini dan nanti</div>
+          <div class="photo-actions edit-only">
+            <label class="btn-small" for="photo3">📤 Pilih foto</label>
+            <input type="file" id="photo3" accept="image/*" hidden>
+            <button class="btn-small" type="button" data-remove="3">🗑️ Hapus</button>
+          </div>
         </div>
+      </div>
+
+      <div class="edit-bar edit-only">
+        <button class="btn btn-primary" id="exportBtn" type="button">💾 Simpan jadi 1 file (foto ikut tersimpan)</button>
+        <p>Pilih foto di atas, lalu klik tombol ini. Kamu akan mendapat satu file HTML baru yang sudah berisi semua foto, tanpa tombol edit, siap dikirim ke adee.</p>
       </div>
     </section>
 
@@ -312,28 +323,105 @@ Happy aniversary, kesayangankuuu!
       else document.getElementById('surat').scrollIntoView({ behavior: 'smooth' });
     });
 
-    // Foto pilihan dari perangkat pengguna. Foto preview lokal tidak otomatis terpublikasi.
-    [1, 2, 3].forEach((n) => {
-      const input = document.getElementById('photo' + n);
-      const preview = document.getElementById('preview' + n);
-      input.addEventListener('change', () => {
-        const file = input.files && input.files[0];
-        if (!file) return;
-        if (!file.type.startsWith('image/')) {
-          showToast('Pilih file gambar, ya 💗');
-          return;
-        }
+    // ===== Foto: upload langsung di halaman, tanpa folder assets =====
+    const STORE_KEY = 'anniv_photos_v1';
+    function loadStore() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch (e) { return {}; } }
+    function saveStore(obj) { try { localStorage.setItem(STORE_KEY, JSON.stringify(obj)); return true; } catch (e) { return false; } }
+
+    function setPhoto(n, src) {
+      const box = document.getElementById('preview' + n);
+      if (!box) return;
+      let img = box.querySelector('img');
+      const ph = box.querySelector('.ph');
+      if (!src) {
+        if (img) img.remove();
+        if (ph) ph.style.display = '';
+        return;
+      }
+      if (!img) { img = document.createElement('img'); box.appendChild(img); }
+      img.src = src;
+      img.alt = 'Foto kenangan ' + n;
+      if (ph) ph.style.display = 'none';
+    }
+
+    // Kecilkan foto agar file tidak terlalu besar
+    function compressImage(file) {
+      return new Promise((resolve, reject) => {
         const reader = new FileReader();
-        reader.onload = (event) => {
-          preview.innerHTML = '';
-          const img = document.createElement('img');
-          img.src = event.target.result;
-          img.alt = 'Foto kenangan ' + n;
-          preview.appendChild(img);
+        reader.onload = (e) => {
+          const im = new Image();
+          im.onload = () => {
+            const max = 1000;
+            const scale = Math.min(1, max / Math.max(im.width, im.height));
+            const w = Math.round(im.width * scale), h = Math.round(im.height * scale);
+            const c = document.createElement('canvas');
+            c.width = w; c.height = h;
+            c.getContext('2d').drawImage(im, 0, 0, w, h);
+            resolve(c.toDataURL('image/jpeg', 0.85));
+          };
+          im.onerror = reject;
+          im.src = e.target.result;
         };
+        reader.onerror = reject;
         reader.readAsDataURL(file);
       });
+    }
+
+    // Muat foto yang tersimpan di browser (mode edit)
+    const store = loadStore();
+    [1, 2, 3].forEach((n) => { if (store[n]) setPhoto(n, store[n]); });
+
+    [1, 2, 3].forEach((n) => {
+      const input = document.getElementById('photo' + n);
+      if (!input) return; // di file hasil simpan, tombol edit sudah dihapus
+      input.addEventListener('change', async () => {
+        const file = input.files && input.files[0];
+        if (!file) return;
+        if (!file.type.startsWith('image/')) { showToast('Pilih file gambar, ya 💗'); return; }
+        try {
+          const data = await compressImage(file);
+          setPhoto(n, data);
+          const s = loadStore(); s[n] = data;
+          if (!saveStore(s)) showToast('Foto tampil, tapi tidak bisa disimpan di browser. Langsung klik "Simpan jadi 1 file" ya.');
+        } catch (err) {
+          showToast('Foto gagal dibaca, coba foto lain 💗');
+        }
+        input.value = '';
+      });
     });
+
+    document.querySelectorAll('[data-remove]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const n = btn.getAttribute('data-remove');
+        setPhoto(n, null);
+        const s = loadStore(); delete s[n]; saveStore(s);
+      });
+    });
+
+    // Simpan halaman jadi 1 file HTML yang sudah berisi foto
+    const exportBtn = document.getElementById('exportBtn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        const clone = document.documentElement.cloneNode(true);
+        clone.querySelectorAll('.edit-only').forEach((el) => el.remove());
+        clone.querySelector('#heartsLayer').innerHTML = '';
+        const t = clone.querySelector('#toast'); t.style.display = 'none'; t.textContent = '';
+        clone.querySelector('#letterContent').setAttribute('hidden', '');
+        const lt = clone.querySelector('#letterToggle');
+        lt.textContent = 'Buka surat cinta 💗'; lt.setAttribute('aria-expanded', 'false');
+        clone.querySelector('#surpriseMessage').setAttribute('hidden', '');
+        clone.querySelector('#surpriseBtn').textContent = 'Pencet untuk kejutan 💝';
+        const mt = clone.querySelector('#musicToggle'); mt.textContent = '♫ Musik: mati'; mt.setAttribute('aria-pressed', 'false');
+        const html = '<!DOCTYPE html>\n' + clone.outerHTML;
+        const blob = new Blob([html], { type: 'text/html' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'anniversary-adee.html';
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+        showToast('File tersimpan: anniversary-adee.html 💗');
+      });
+    }
 
     // Pesan kejutan
     document.getElementById('surpriseBtn').addEventListener('click', () => {
@@ -343,7 +431,7 @@ Happy aniversary, kesayangankuuu!
       for (let i = 0; i < 18; i++) setTimeout(createHeart, i * 80);
     });
 
-    // Musik: browser membutuhkan interaksi pengguna. Musik romantis dapat ditambahkan sendiri.
+    // Musik
     let musicOn = false;
     const musicToggle = document.getElementById('musicToggle');
     musicToggle.addEventListener('click', () => {
